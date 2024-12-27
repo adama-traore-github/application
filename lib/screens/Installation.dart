@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class EstablishmentInfoScreen extends StatelessWidget {
+class InstallationsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Informations de l\'Etablissement',
-          style: TextStyle(color: Colors.white),
+          'Installations',
+          style: TextStyle(color: Colors.black),
         ),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
@@ -26,40 +26,12 @@ class EstablishmentInfoScreen extends StatelessWidget {
           child: ListView(
             children: [
               SizedBox(height: 20),
-              _buildTextField('Nom de l\'etablissement'),
-              SizedBox(height: 20),
-              _buildTextField('Contact'),
-              SizedBox(height: 20),
-              _buildTextField('Email'),
-              SizedBox(height: 20),
-              _buildTextField('Site web'),
-              SizedBox(height: 20),
-              _buildTextField('Reseaux sociaux'),
-              SizedBox(height: 20),
-              _buildTextField('Quartier'),
-              SizedBox(height: 20),
-              _buildTextField('Secteur'),
-              SizedBox(height: 20),
-              _buildTextField('Pays'),
-              SizedBox(height: 20),
-              _buildTextField('Ville'),
-              SizedBox(height: 20),
-              _buildTextField('Annee de creation'),
-              SizedBox(height: 20),
-              _buildTextField('Type d\'etablissement'),
-              SizedBox(height: 20),
-              _buildTextField('Classification (Nombres d\'etoiles)'),
-              SizedBox(height: 20),
-              _buildTextField('Votre etablissement fait-il partie d\'une chaine ou est-il independant ?'),
-              SizedBox(height: 20),
-              _buildTextField('Votre etablissement dispose-t-il d\'un bar ou d\'une cafetaria ?'),
-              SizedBox(height: 20),
-              _buildTextField('Disposez-vous d\'un site web ? Si oui, precisez'),
+              _buildTextField('Quelles installations disposez-vous ?'),
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
                   // Logique pour enregistrer les informations saisies
-                  print('Informations enregistrees');
+                  print('Informations enregistrées');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueAccent,

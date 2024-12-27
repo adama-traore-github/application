@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class EstablishmentInfoScreen extends StatelessWidget {
+class RoomsAndAccommodationsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Informations de l\'Etablissement',
+          'Chambres et Hebergements',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
@@ -26,35 +26,23 @@ class EstablishmentInfoScreen extends StatelessWidget {
           child: ListView(
             children: [
               SizedBox(height: 20),
-              _buildTextField('Nom de l\'etablissement'),
+              _buildTextField('Nombre de chambres'),
               SizedBox(height: 20),
-              _buildTextField('Contact'),
+              _buildTextField('Types de chambres'),
               SizedBox(height: 20),
-              _buildTextField('Email'),
+              _buildTextField('Equipements disponibles dans les chambres'),
               SizedBox(height: 20),
-              _buildTextField('Site web'),
+              _buildTextField('Caracteristiques de vos chambres'),
               SizedBox(height: 20),
-              _buildTextField('Reseaux sociaux'),
+              _buildTextField('Taille des lits'),
               SizedBox(height: 20),
-              _buildTextField('Quartier'),
+              _buildTextField('Chambres accessibles aux personnes a mobilite reduite'),
               SizedBox(height: 20),
-              _buildTextField('Secteur'),
+              _buildTextField('Chambre non-fumeurs'),
               SizedBox(height: 20),
-              _buildTextField('Pays'),
+              _buildTextField('Disposez-vous d\'un service de restauration ?'),
               SizedBox(height: 20),
-              _buildTextField('Ville'),
-              SizedBox(height: 20),
-              _buildTextField('Annee de creation'),
-              SizedBox(height: 20),
-              _buildTextField('Type d\'etablissement'),
-              SizedBox(height: 20),
-              _buildTextField('Classification (Nombres d\'etoiles)'),
-              SizedBox(height: 20),
-              _buildTextField('Votre etablissement fait-il partie d\'une chaine ou est-il independant ?'),
-              SizedBox(height: 20),
-              _buildTextField('Votre etablissement dispose-t-il d\'un bar ou d\'une cafetaria ?'),
-              SizedBox(height: 20),
-              _buildTextField('Disposez-vous d\'un site web ? Si oui, precisez'),
+              _buildTextField('Disposez-vous d\'un service de petit-dejeuner ?'),
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
